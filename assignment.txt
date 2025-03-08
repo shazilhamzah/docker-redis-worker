@@ -1,0 +1,7 @@
+Advanced Assignment: Orchestrate a Multi-Service Application
+Prompt:
+Build a distributed system with three services using Docker Compose:
+
+1. Node.js REST API: Exposes an endpoint /data to accept JSON payloads and publish them to a Redis message queue.
+
+2. NodeJS Worker: Subscribes to the Redis queue, processes the data (e.g., computes a hash or transforms the payload), and stores results in a PostgreSQL database.

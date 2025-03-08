@@ -1,0 +1,5 @@
+build nodejs image using Dockerfile:
+sudo docker build -t imagename:tag ./
+
+build container from nodejs image:
+sudo docker run --name containerName -d --restart=always -p port:port/tcp imagename

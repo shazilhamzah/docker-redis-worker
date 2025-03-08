@@ -1,0 +1,17 @@
+version: '3'
+services:
+  node-redis-app:
+    build: .
+    container_name: node-redis-app-container
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379  # Use service name 'redis' as the hostname
+
+  redis:
+    image: redis:latest
+    container_name: redis-container
+    ports:
+      - "6379:6379"

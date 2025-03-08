@@ -1,0 +1,23 @@
+{
+  "name": "docker_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "export NODE_OPTIONS=--max_old_space_size=4096 && nodemon worker.js"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.4"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "bullmq": "^5.41.5",
+    "express": "^4.21.2",
+    "ioredis": "^5.5.0",
+    "nodaemon": "^0.0.5",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.3"
+  }
+}
