@@ -19,7 +19,7 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/redis-bullmq-worker.git
+   git clone https://github.com/your-username/docker-redis-worker.git
    cd redis-bullmq-worker
    ```
 
